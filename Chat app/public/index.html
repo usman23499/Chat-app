@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD5BHjXphRO-i63t3GybpYRQRNzka0KDxQ",
+    authDomain: "quizapp-b92c8.firebaseapp.com",
+    databaseURL: "https://quizapp-b92c8.firebaseio.com",
+    projectId: "quizapp-b92c8",
+    storageBucket: "quizapp-b92c8.appspot.com",
+    messagingSenderId: "189255957224",
+    appId: "1:189255957224:web:ed4996bd54ffe689dc675d",
+    measurementId: "G-E4RW52NERY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ 
+</script>
+</head>
+<body>
+
+
+    <center>
+    <div class="main">
+
+       
+        <img src="image/icon.png" alt="" srcset="" >
+    <br>
+   
+    
+    <br>
+    <button type="submit" onclick="loademail()"Chat App >Chat App</button>
+    
+</div>
+</center>
+
+<script >
+   var Email="defaultValue";
+   var Name="";
+    let loademail=()=>{
+
+      var provider = new firebase.auth.FacebookAuthProvider();
+
+
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+  // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+  var token = result.credential.accessToken;
+  // The signed-in user info.
+  var user = result.user;
+  // ...
+
+  
+        Email=user.email;
+        Name=user.displayName;
+
+        localStorage['Email'] = Email;
+        localStorage['Name'] = Name;
+        localStorage['image1']=user.photoURL;
+        window.location="Chosefriend.html";
+        // console.log(user)
+
+
+}).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // The email of the user's account used.
+  var email = error.email;
+  // The firebase.auth.AuthCredential type that was used.
+  var credential = error.credential;
+  // ...
+
+  console.log(`User ====> ${errorMessage}`)
+
+});
+
+
+
+        
+}
+</script>
+</body>
+</html>
+
+
+<!-- https://www.privacypolicygenerator.info/live.php?token=AAwpO1hGjqXq6Ui3ZOqfMSgG9pmXiXU7 -->
+ <!-- uper link hai privicy policy ka -->

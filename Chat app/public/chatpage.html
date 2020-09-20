@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD5BHjXphRO-i63t3GybpYRQRNzka0KDxQ",
+    authDomain: "quizapp-b92c8.firebaseapp.com",
+    databaseURL: "https://quizapp-b92c8.firebaseio.com",
+    projectId: "quizapp-b92c8",
+    storageBucket: "quizapp-b92c8.appspot.com",
+    messagingSenderId: "189255957224",
+    appId: "1:189255957224:web:ed4996bd54ffe689dc675d",
+    measurementId: "G-E4RW52NERY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ 
+</script>
+
+
+
+
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <img  src="image/icon.png"  class="picsize" id="myimage" alt=""> -->
+    <a class="navbar-brand" href="" id="changename">Chat App </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+      
+      </ul>
+      <span class="navbar-text">
+
+        <ul class="navbar-nav mr-auto">
+            
+            
+                
+            
+            
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" onclick="makedefult()">LOG OUT</a>
+              </li>
+
+
+              
+
+          </ul>
+       
+      </span>
+    </div>
+  </nav>
+  
+
+        <center>
+            <img src="image/icon.png" alt="" srcset="" >
+
+    <div class="form-group">
+        <div class="main2" id="chatdiv">
+          <p>Start Chating</p>
+          <div class="d-flex justify-content-center" id="spiner">
+            <div class="spinner-grow text-info" role="status">
+              
+            </div>
+            <div class="spinner-grow text-info" role="status">
+              
+            </div>
+            <div class="spinner-grow text-info" role="status">
+              
+            </div>
+          </div>
+
+
+
+        </div>
+        <!-- <textarea class="form-control" rows="12"  readonly id="chat" placeholder="Start Chating"></textarea> -->
+    
+        <textarea class="form-control"  rows="2"  placeholder="Type Here" id="mytext"></textarea>
+        <center>
+        <button type="button" class="btn btn-primary btn-lg mybtn" onclick="send()" id="mybutton">Send</button>
+    </center>
+    </div>    
+
+</center>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>

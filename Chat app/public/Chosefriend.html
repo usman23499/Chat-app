@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Char App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <center>
+        <div class="main">
+    
+           
+            <img src="image/icon.png" alt="" srcset="" >
+        <br>
+        <form action="chatpage.html">
+        <input type="email" placeholder="Enter friend email" id="email2" required="required"></input>
+        <br>
+        <button type="submit" onclick="loademail()">Friend ID</button
+        </form>
+    </div>
+    </center>
+    
+    <script >
+        let loademail=()=>{
+            localStorage['FriendEmail'] = document.getElementById("email2").value;
+    }
+    </script>
+</body>
+</html>

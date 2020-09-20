@@ -1,0 +1,98 @@
+body{
+    background-image: url('image/background.jpg');
+ 
+}
+.form-group{
+    
+width: 80%;
+}
+.mybtn{
+    margin-top: 5px !important;
+    visibility: hidden ;
+}
+img{
+    width: 10%;
+}
+textarea{
+    margin-top: 2px;
+    visibility: hidden;
+    margin-left: 6px;
+}
+.main2{
+    width: 100% !important;
+    
+    height: 350px;
+    border-radius: 8px;
+    background-color:#e9ecef;
+    overflow: auto;
+    scroll-behavior: smooth !important;
+    
+    justify-content: left;
+    text-align: left;
+    
+}
+div{
+    
+    margin: 8px !important;
+    color: rgb(172, 168, 168);
+}
+.leftdiv{
+    
+    width: 40% !important;
+    min-height: 50px !important;
+    margin-left: 7px;
+    background-color:wheat !important;
+    justify-content: space-between !important;
+    
+    margin-top: 4px;
+    color: white;
+    border-radius: 8px;
+    padding-top: 10px !important;
+    padding-left: 10px;
+    overflow-wrap: break-word;
+    scroll-behavior: smooth;
+   
+
+}
+
+.rightdiv{
+    
+    width: 40% !important;
+    min-height: 50px !important;
+   
+    background-color:#fcba7f !important;
+    justify-content: space-between !important;
+    margin-left: 59% !important;
+    margin-top: 4px;
+    color: white;
+    border-radius: 8px;
+    padding-top: 10px !important;
+    padding-left: 10px;
+
+    overflow-wrap: break-word;
+
+    scroll-behavior: smooth;
+   
+}
+
+.spinner-grow{
+    
+    margin: 2px !important;
+ 
+}
+
+
+.forp{
+   
+    font-size: small !important;
+    }
+    
+    .picsize{
+        border-radius: 100px 100px ;
+        border: 2px solid black;
+        width: 60px;
+    
+    }
+    .navbar-brand{
+        justify-content: left !important;
+    }
